@@ -1,0 +1,76 @@
+body{
+    /* background-color: rgb(5, 5, 5); */
+    background-color: rosybrown;
+    font-family: sans-serif;
+}
+.container{
+    /* background-color: rosybrown; */
+    background-color: rgb(5, 5, 5);
+    color: rgb(160, 76, 76);
+    width: 500px;
+    margin: 10vh auto 0 auto;
+    box-shadow: 0px 0px 43px 17px rgba(153,153,153,1);
+}
+#display {
+    text-align: right;
+    height: 70px;
+    line-height: 70px;
+    padding: 16px 8px;
+    font-size: 25px;
+}
+
+.buttons{
+    display: flex;
+    justify-content:space-between;
+    flex-wrap: wrap;
+}
+
+.button{
+    margin: 25px;
+    padding: 25px;
+    border: 2px solid rgb(32, 31, 31);
+    cursor: pointer;
+}
+.button:hover{
+    background-color: rgb(153, 79, 79);
+    color: white;
+}
+#equal{
+    background: rgb(122, 31, 74);
+    color: white;
+}
+#equal:hover{
+    background: rgb(68, 16, 40);
+}
+
+@media only screen and (max-width: 600px) {
+    .container {
+      /* background-color: rgb(5, 5, 5); */
+      width: 300px;
+    }
+    .button{
+        margin: 15px;
+        padding: 15px;
+    }
+
+}
+
+.theme{
+    padding: 10px;
+    text-align: right;
+    
+}
+
+.theme>span{
+    margin: 5px;
+    cursor: pointer;
+    /* box-shadow: 0px 0px 13px 7px rgba(153,153,153,1); */
+}
+
+.theme>span:hover{
+    color: rgb(146, 79, 146);
+}
+#light{
+    display: none;
+}
+ 
